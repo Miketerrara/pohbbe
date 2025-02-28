@@ -1,0 +1,16 @@
+@use 'variable.scss' as c;
+
+header{
+    position:relative;
+    vertical-align: middle;
+    background: c.$bggradientGreen;
+    padding:2rem 0;
+    button{
+        border: 1px solid c.$bg;
+        margin: 0 1.2rem;
+    }
+}  
+.solicite{
+    background: c.$bggradientGreen;
+    border: none;
+}

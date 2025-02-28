@@ -1,0 +1,35 @@
+@use 'variable.scss' as c;
+
+.hero{
+    position:relative;
+    width:100%;
+    height:56rem;
+    background:c.$bgGreen;
+    .title-hero, .subtitle, a{
+        margin-left:32rem;
+        color:c.$f-color;
+    }
+    img{
+        width:100%;
+        height:auto;
+        object-fit:cover;
+    }
+    button{
+        background-color: c.$f-color;
+        padding:1rem 4rem;
+        margin-top:1rem;
+        transition: c.$transition;
+        &:hover{
+            opacity:.8;
+        }
+    }
+}
+.title-hero{
+    padding-top:20rem;
+    font: c.$ff-title;
+    text-transform: uppercase;
+    width:48rem;
+}
+.subtitle{
+    font:c.$ff-sub;
+}

@@ -1,0 +1,325 @@
+header {
+  position: relative;
+  vertical-align: middle;
+  background: linear-gradient(90deg, #AEC655, #DBE7A7);
+  padding: 2rem 0;
+}
+header button {
+  border: 1px solid #fff;
+  margin: 0 1.2rem;
+}
+
+.solicite {
+  background: linear-gradient(90deg, #AEC655, #DBE7A7);
+  border: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.flex-a-e {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+}
+
+.flex-c {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.flex-wrap__evenly {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  column-gap: 16rem;
+  row-gap: 4rem;
+  align-items: center;
+}
+
+.flex-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-wrap-c {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex-column-start {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.flex-centerfix {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-col-2 {
+  display: flex;
+  flex: 1;
+  margin: 0 0.5rem;
+}
+
+footer {
+  background: #AEC655;
+  color: #fff;
+  padding: 3.2rem 2rem;
+  margin-top: 5.6rem;
+  font: 300 1.4rem/2.8rem "Roboto Flex", sans-serif;
+}
+footer .flex-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+footer div {
+  margin-bottom: 1.6rem;
+}
+footer div a {
+  font-size: 1.6rem;
+  margin: 0 1.6rem;
+  color: #fff;
+}
+footer div p {
+  font-size: 1.4rem;
+}
+footer div h5 {
+  font-weight: 800;
+}
+footer div i {
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 56rem;
+  background: #AEC655;
+}
+.hero .title-hero, .hero .subtitle, .hero a {
+  margin-left: 32rem;
+  color: #333333;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.hero button {
+  background-color: #333333;
+  padding: 1rem 4rem;
+  margin-top: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+.hero button:hover {
+  opacity: 0.8;
+}
+
+.title-hero {
+  padding-top: 20rem;
+  font: 800 5.2rem/5.2rem "Roboto Flex", sans-serif;
+  text-transform: uppercase;
+  width: 48rem;
+}
+
+.subtitle {
+  font: 400 1.6rem/2.4rem "Roboto Flex", sans-serif;
+}
+
+html {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 62.5%;
+}
+
+section + section {
+  padding: 4.8rem 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.bg-green {
+  padding: 4rem;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #AEC655, #DBE7A7);
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.bg-green img {
+  flex: 1 1 66rem;
+  max-width: 50%;
+}
+.bg-green .box-info {
+  flex: 1 1 20rem;
+  max-width: 50%;
+}
+.bg-green .title {
+  color: #fff;
+  font-size: 4.8rem;
+  font-weight: 800;
+}
+.bg-green .title, .bg-green .txt-corpo {
+  text-align: left;
+}
+.bg-green .txt-corpo {
+  width: 36rem;
+  margin-bottom: 2rem;
+}
+.bg-green button {
+  background: #333333;
+  font: 400 1.6rem/2.4rem "Roboto Flex", sans-serif;
+}
+
+button {
+  font: 300 1.4rem/2rem "Roboto Flex", sans-serif;
+  padding: 0.8rem 4rem;
+  color: #fff;
+  border-radius: 0.4rem;
+}
+
+nav a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.title {
+  font: 800 5.2rem/5.2rem "Roboto Flex", sans-serif;
+  color: #AEC655;
+}
+
+.title, .txt-corpo {
+  text-align: center;
+}
+
+.txt-corpo {
+  font: 300 1.4rem/2rem "Roboto Flex", sans-serif;
+  margin-top: 2rem;
+  letter-spacing: 0.4px;
+  color: #333333;
+}
+
+span:after {
+  content: "\a";
+  white-space: pre;
+}
+
+/*# sourceMappingURL=style.css.map */

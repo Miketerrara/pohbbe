@@ -1,0 +1,21 @@
+{
+  "name": "pohbbe",
+  "version": "1.0.0",
+  "description": "Conheça nosso novo produto: POHBBe ocmprimido analgésico, entenda para que serve, como tomar e qual a composição",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "pohbbe"
+  },
+  "license": "ISC",
+  "author": "Miketerrara",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@flaticon/flaticon-uicons": "^3.3.1"
+  },
+  "devDependencies": {}
+}

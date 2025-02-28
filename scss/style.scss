@@ -1,0 +1,87 @@
+@use 'header.scss';
+@use 'reset.scss';
+@use 'flexbox.scss';
+@use 'footer.scss';
+@use 'hero.scss';
+@use 'variable.scss' as c;
+
+html{
+    font-family: c.$ff;
+    font-size: 62.5%;
+}
+section + section{
+    padding:4.8rem 0;
+}
+.container{
+    width:100%;
+    max-width:1280px;
+    margin: 0 auto;
+    padding:2rem 0;    
+}
+.bg-green{
+    padding: 4rem;
+    box-sizing:border-box;
+    background:c.$bggradientGreen;
+    border-radius:.8rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:2rem;
+    img{
+        flex:1 1 66rem;
+        max-width:50%;
+    }
+    .box-info{
+        flex: 1 1 20rem;
+        max-width:50%;
+    }
+    .title{
+        color: c.$bg;  
+        font-size:4.8rem;
+        font-weight:800;      
+    }
+    .title, .txt-corpo{
+        text-align:left;
+    }
+    .txt-corpo{
+        width:36rem;
+        margin-bottom:2rem;
+    }
+    button{
+        background: c.$f-color;
+        font:c.$ff-sub;
+    }
+}
+button{
+    font:c.$ff-txt;
+    padding: .8rem 4rem;
+    color:c.$bg;
+    border-radius:.4rem;
+}
+nav{
+    a{
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.title{
+    font: c.$ff-title;
+    color:c.$bgGreen;
+}
+.title, .txt-corpo{
+    text-align:center;
+}
+.txt-corpo{
+    font:c.$ff-txt;
+    margin-top:2rem;
+    letter-spacing: .4px;
+    color: c.$f-color;
+}
+span{
+    &:after{
+        content:"\a";
+        white-space: pre;
+    }
+}
