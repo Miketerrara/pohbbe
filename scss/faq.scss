@@ -1,0 +1,51 @@
+@use 'variable.scss' as c;
+
+.box-faq{
+    position:relative;
+    width:60%;
+    height:5rem;
+    background-color: c.$bgGreenLight;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin: 1.6rem auto;
+    padding: 0 2rem;
+    border-radius:.8rem;
+    cursor:pointer;
+    transition: c.$transition;
+    &:hover{
+        background-color: c.$bgGreen;
+    }
+    .txt-corpo{
+        margin-top:0;
+    }
+}
+#faq1, #faq2, #faq3{
+    top:5rem;
+    padding:1.6rem 1.6rem;
+    width:60%;
+    height:auto;
+    border-bottom-left-radius:.8rem;
+    border-bottom-right-radius:.8rem;
+    margin:-2.4rem auto 0;
+    background-color: c.$bg;
+    box-shadow: c.$shadow-box;
+    display:none;
+    .txt-corpo{
+        margin-top:.4rem;
+    }
+}
+.btn-faq{
+    display:block;
+    cursor:pointer;
+    font: c.$ff-txt;
+    color: c.$bg;
+    background-color:c.$f-color;
+    width:18rem;
+    margin: 0rem auto;
+    transition: c.$transition;
+    text-decoration: none;
+    &:hover{
+        opacity:.8;
+    }
+}

@@ -1,35 +1,90 @@
 @use 'variable.scss' as c;
 
-.hero{
-    position:relative;
-    width:100%;
-    height:56rem;
-    background:c.$bgGreen;
-    .title-hero, .subtitle, a{
-        margin-left:32rem;
-        color:c.$f-color;
+.hero {
+    position: relative;
+    width: 100%;
+    height: 68rem;
+    overflow: hidden;
+    .title-hero, .subtitle, a {
+        color: c.$bg;
+        margin-left:2rem;
     }
-    img{
-        width:100%;
-        height:auto;
-        object-fit:cover;
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
-    button{
-        background-color: c.$f-color;
-        padding:1rem 4rem;
-        margin-top:1rem;
+    button {
+        padding: 1rem 4rem;
+        background: c.$bggradientGreen;
+        margin-top: 2rem;
+        margin-bottom:4rem;
         transition: c.$transition;
-        &:hover{
-            opacity:.8;
+        color:c.$f-color;
+        z-index: 3;
+        &:hover {
+            box-shadow: c.$shadow-box;
+        }
+    }
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 1280px;
+        height:100%;
+        object-fit: cover;
+        z-index: -3;
+    }
+    @media screen and (max-width:768px){
+        .container{
+            padding:0;
+        }
+        button{
+            padding:.8rem 3rem;
+            margin-bottom:2rem;
+        }
+        height:50rem;
+        video{
+            height:100%;
         }
     }
 }
-.title-hero{
-    padding-top:20rem;
+.container-info{
+    width:64rem;
+    height:auto;
+    background-color:c.$f-color-opacity;
+    margin: 24rem 5rem 0;
+    box-shadow: 10px 10px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.title-hero {
+    padding-top: 4rem;
     font: c.$ff-title;
     text-transform: uppercase;
-    width:48rem;
+    width: 60rem;
+    z-index: 3;
 }
-.subtitle{
-    font:c.$ff-sub;
+.subtitle {
+    font: c.$ff-sub;
+    margin-top: 1rem;
+    z-index: 3;
 }
+@media screen and (max-width:768px){
+
+    .container-info{
+        position:absolute;
+        width:100%;
+        bottom:0;
+        margin:0;
+        left:0;
+    }
+    .title-hero{
+        font:c.$ff-title_section-mobile;
+        width:90%;
+    }
+    .subtitle{
+        font: c.$ff-txt-mobile;
+    }
+
+} 

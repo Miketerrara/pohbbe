@@ -16,6 +16,8 @@
     <meta property="og:image" content="#">
     <meta property="og:imge:type" content="image/jpg">
     <meta property="og:type" content="website">
+    <link rel='stylesheet' href="./assets/icones/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="apple-touch-icon" sizes="120x120" href="./assets/Camada-2@120px.png">
     <link rel="apple-touch-icon" sizes="99x99" href="./assets/Camada-2@99px.png">
     <link rel="apple-touch-icon" sizes="88x88" href="./assets/Camada-2@88px.png">
@@ -29,9 +31,7 @@
     <link rel="icon" type="image/png" sizes="60x60" href="./assets/Camada-2@60px.png">
     <link rel="icon" type="image/png" sizes="30x30" href="./assets/Camada-2@30px.png">
     <link rel="icon" type="image/png" sizes="20x20" href="./assets/Camada-2@20px.png">
-    <link rel="icon" type="image/png" sizes="12x12" href="./assets/Camada-2@12px.png">
-    <link rel="stylesheet" href="./node_modules/@flaticon/flaticon-uicons/css/all/all.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" sizes="12x12" href="./assets/Camada-2@12px.png">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
@@ -39,26 +39,32 @@
 <body>
     <header>
         <div class="container flex">
-            <img src="./assets/pohbbe-logo.svg" alt="logotipo da pohbbe">
+            <img src="./assets/pohbbe-logo.svg" alt="logotipo da pohbbe" class="logotipo">
             <nav class="flex">
                 <a href=""><button type="button">Entre em contato</button></a>
-                <a href=""><button type="button" class="solicite">Solicite uma amostra</button></a>
+                <a href="">
+                    <button type="button" class="solicite">Solicite uma amostra</button>
+                </a>
             </nav>
         </div>
     </header>
     <main>
-        <section>
-            <div class="hero">
-                <h1 class="title-hero">O guarda-costas da sua diversão</h1>
-                <p class="subtitle">O protetor da alegria</p>
-                <a href=""><button type="button">Compre agora</button></a>
+        <section class="hero">            
+            <div class="container">       
+                <div class="container-info">
+                    <h1 class="title-hero">O guarda-costas da sua diversão</h1>
+                    <p class="subtitle">O protetor da alegria</p>
+                    <a href=""><button type="button">Compre agora</button></a>
+                </div>         
+                <div class="video-overlay"></div>
+                <video src="./assets/video-embalagem-pilula.mp4" autoplay muted loop></video>
             </div>
         </section>
         <section>
             <div class="container">
                 <h2 class="title">Atua na prevenção</h2>
                 <p class="txt-corpo">
-                    Tomar todos os dias para melhorar o funcionamento do organismo, ou antes de uma “night” <span></span>para impedir aquela ressaca “braba”!
+                    Tomar todos os dias para melhorar o funcionamento do organismo, ou antes de uma <span></span>“night” para impedir aquela ressaca “braba”!
                 </p>
             </div>
         </section>
@@ -77,72 +83,64 @@
             </div>
         </section>
         <section>
-            <div class="container">
-                <div class="cards">
-                    <img src="" alt="">
-                    <div class="cards__pricing">
-                        <div class="cards__pricing-unit">
-                            <p class="info-pricing">Dose única POHBBe</p>
+            <div class="container">                
+                <div class="container__cards flex">
+                    <!--<div class="container__cards--arrows">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>-->
+                    <div class="cards">
+                        <img src="./assets/embalagem-dose-unica.png" alt="pohbbe dose unica">
+                        <div class="flex">
+                            <div>
+                                <p class="info-dsc">Dose única POHBBe</p>
+                            </div>
+                            <div>
+                                <p class="info-pricing"><sub>R$</sub>13,70</p>
+                            </div>
                         </div>
-                        <div class="cards__pricing-cj">
-                            <p class="info-pricing"><sub>R$</sub>13,70</p>
-                        </div>
+                        <a href=""><button type="button" id="comprar">Comprar</button></a>
                     </div>
-                    <a href=""><button type="button">Comprar</button></a>
-                </div>
-                <div class="cards">
-                    <img src="" alt="">
-                    <div class="cards__pricing">
-                        <div class="cards__pricing-unit">
-                            <p class="info-pricing">4 dose de POHBBe</p>
-                            <p class="info-pricing-unit">R$13,70/ dose</p>
+                    <div class="cards">
+                        <img src="./assets/embalagem-quatro-doses.png" alt="4 doses de POHBBe">
+                        <div class="flex">
+                            <div>
+                                <p class="info-dsc">4 dose de POHBBe</p>
+                                <p class="info-pricing__unit">R$13,70/ dose</p>
+                            </div>
+                            <div>
+                                <p class="info-pricing"><sub>R$</sub>54,80</p>
+                                <p class="info-pricing__del"><del>R$97,70</del></p>
+                            </div>
                         </div>
-                        <div class="cards__pricing-cj">
-                            <p class="info-pricing"><sub>R$</sub>54,80</p>
-                            <p class="info-pricing-unit"><del>R$97,70</del></p>
-                        </div>
+                        <a href=""><button type="button" id="comprar">Comprar</button></a>
                     </div>
-                    <a href=""><button type="button">Comprar</button></a>
-                </div>
-                <div class="cards">
-                    <img src="" alt="">
-                    <div class="cards__pricing">
-                        <div class="cards__pricing-unit">
-                            <p class="info-pricing">10 dose de POHBBe</p>
-                            <p class="info-pricing-unit">R$13,30/ dose</p>
+                    <div class="cards">
+                        <img src="./assets/embalagem-dez-doses.png" alt="10 doses de POHBBe">
+                        <div class="flex">
+                            <div>
+                                <p class="info-dsc">10 dose de POHBBe</p>
+                                <p class="info-pricing__unit">R$13,30/ dose</p>
+                            </div>
+                            <div>
+                                <p class="info-pricing"><sub>R$</sub>113</p>
+                                <p class="info-pricing__del"><del>R$200,97</del></p>
+                            </div>
                         </div>
-                        <div class="cards__pricing-cj">
-                            <p class="info-pricing"><sub>R$</sub>113</p>
-                            <p class="info-pricing-unit"><del>R$200,97</del></p>
-                        </div>
-                    </div>
-                    <a href=""><button type="button">Comprar</button></a>
-                </div>
-                <div class="cards">
-                    <img src="" alt="">
-                    <div class="cards__pricing">
-                        <div class="cards__pricing-unit">
-                            <p class="info-pricing">16 dose de POHBBe</p>
-                            <p class="info-pricing-unit">R$12,97/ dose</p>
-                        </div>
-                        <div class="cards__pricing-cj">
-                            <p class="info-pricing"><sub>R$</sub>207,52</p>
-                            <p class="info-pricing-unit"><del>R$280,97</del></p>
-                        </div>
-                    </div>
-                    <a href=""><button type="button">Comprar</button></a>
+                        <a href=""><button type="button" id="comprar">Comprar</button></a>
+                    </div>                
                 </div>
             </div>
         </section>
         <section>
             <div class="container bg-green">
-                <img src="./assets/embalagens.jpg" alt="">
+                <img src="./assets/embalagens.jpg" alt="" class="img-embalagem">
                 <div class="box-info">
-                    <div class="graph"><i class="fi fi-rr-martini-glass-citrus"></i></div>
+                    <div class="graph"><i class="fa-solid fa-medal"></i></div>
                     <p class="txt-corpo">
                         E evolução dos remédios para ressaca que você precisa, não tenha dor de cabeça, mal estar, azia e indisposição nunca mais.
                     </p>
-                    <div class="graph"><i class="fi fi-br-stomach"></i></div>
+                    <div class="graph-2"><i class="fa-solid fa-bacteria"></i></div>
                     <p class="txt-corpo">
                         56% de melhora no bem-estar
                     </p>                    
@@ -154,26 +152,41 @@
                 <h2 class="title">Dúvidas frequentes</h2>
                 <p class="txt-corpo">Para saber mais acesse o FAQ</p>
                 <div class="box-faq">
-                    <p class="tx-corpo">Para quem é indicado?<i class="fi fi-bs-angle-small-right"></i></p>
-                    <div id="msg-faq"></div>
+                    <p class="txt-corpo">Para quem é indicado?<i class="fi fi-bs-angle-small-right"></i></p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div id="faq1">
+                    <p class="txt-corpo">
+                        O POHBBe é indicado para pessoas que desejam proteger o fígado, melhorar a desintoxicação natural do corpo e reduzir os impactor do consumo de álcool e alimentos ricos em toxinas.
+                    </p>
                 </div>
                 <div class="box-faq">
-                    <p class="tx-corpo">O POHBBe ajuda na ressaca?<i class="fi fi-bs-angle-small-right"></i></p>
-                    <div id="msg-faq"></div>
+                    <p class="txt-corpo">O POHBBe ajuda na ressaca?<i class="fi fi-bs-angle-small-right"></i></p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div id="faq2">
+                    <p class="txt-corpo">
+                        Sim, ele reduz os efeitos da ressaca ao combater o acetaldeído, subproduto tóxico do álcool, e ajuda na desintoxicação do fígado.
+                    </p>
                 </div>
                 <div class="box-faq">
-                    <p class="tx-corpo">Diabéticos podem consumir?<i class="fi fi-bs-angle-small-right"></i></p>
-                    <div id="msg-faq"></div>
+                    <p class="txt-corpo">Diabéticos podem consumir?<i class="fi fi-bs-angle-small-right"></i></p>
+                    <i class="fa-solid fa-chevron-right"></i>
                 </div>
-                <a href="./faq.html"><button type="button">Acessar o FAQ</button></a>
+                <div id="faq3">
+                    <p class="txt-corpo">
+                        Somente com orientação médica, pois ingredientes como a D-ribose podem diminuir os níveis de açúcar no sangue.
+                    </p>
+                </div>
+                <a href="./faq.html" style="margin-top:2rem;"><button type="button" class="btn-faq">Acessar o FAQ</button></a>
             </div>
         </section>
     </main>
     <footer>
-        <div class="container">
-            <img src="./assets/logotipo.svg" alt="logotipo POHBBe">
+        <div class="container flex">
+            <img src="./assets/logotipo.svg" alt="logotipo POHBBe" class="logotipo">
             <nav>
-                <ul class="flex">
+                <ul class="footer__nav">
                     <a href="#" target="_blank"><li>Contato</li></a>
                     <a href="./termos.html" target="_blank"><li>Termos de uso</li></a>
                     <a href="./privacidade.html" target="_blank"><li>Política de privacidade</li></a>
@@ -182,5 +195,6 @@
             </nav>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
